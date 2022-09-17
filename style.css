@@ -166,9 +166,30 @@ animation-duration: 1s;
     background-color: rgb(188, 214, 231);
   }
 
-
-
-
-
-
-
+/* text animation section */
+.text-dark{
+  overflow: hidden;
+}
+.inner2{
+  animation: Slide_Up 1.4s ease;
+}
+.inner3{
+  animation: Slide_Up 2.1s ease;
+}
+.inner4{
+  animation: Slide_Up 2.5s ease;
+}
+.inner5{
+  animation: Slide_Up 2.9s ease;
+}
+.inner6{
+  animation: Slide_Up 3.4s ease;
+}
+@keyframes Slide_Up{
+  0%{
+    transform: translateY(250px );
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
