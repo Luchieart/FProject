@@ -91,24 +91,6 @@
               >About</a>
           </li>
           
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-dark fw-bold mx-3"
-              href="http://example.com"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Pages
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="login.html">Login</a>
-              <a class="dropdown-item" href="cart.html">Cart</a>
-              <a class="dropdown-item" href="product.html">Product Details</a>
-              <a class="dropdown-item" href="checkout.html">Product Checkout</a>
-            </div>
-          </li>
           <li class="nav-item active mx-3">
             <a class="nav-link text-dark fw-bold" href="blog.html"
               >Blog</a>
@@ -121,7 +103,7 @@
               <i class="fa fa-search fa-6x mx-2 p-1 pt-2" style="font-size:30px"></i>
           </li>
           <li class="nav-item">
-              <i class="fa fa-user mx-2 p-1 pt-2" style="font-size:30px"></i>
+             <a href="login.html"> <i class="fa fa-user mx-2 p-1 pt-2" style="font-size:30px ;color:rgb(19, 18, 18);"></i></a>
           </li>
           <li class="nav-item">
             <i class="fa fa-shopping-cart mx-2 p-1 pt-2" style="font-size:30px"></i>
@@ -141,7 +123,7 @@
                 <h2 class="inner3">You do the Shopping</h2>
                 <h1 class="inner4">On all products</h1>
                 <p class="inner5">sign-up for fashion shop 'add to cart'email</p>
-                <button class=" buttn mx-5 inner6">SHOP NOW</button>
+                <a href="shop.html" class="inner6"><button class=" buttn mx-5">SHOP NOW</button></a>
               </div>
             </div>
           </div>
@@ -154,7 +136,7 @@
                 <h2 class="inner3">You do the Shopping</h2>
                 <h1 class="inner4">On all products</h1>
                 <p class="inner5">sign-up for fashion shop 'add to cart'email</p>
-                <button class=" buttn mx-5 inner6">SHOP NOW</button>
+                <a href="shop.html" class="inner6"><button class=" buttn mx-5">SHOP NOW</button></a>
               </div>
           </div>
         </div>
@@ -166,6 +148,76 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>
+    </section>
+    <section class="mt-5">
+      <div class="container mt-4">
+        <div class="row flexxed">
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-10">
+          
+            <i class="fa-regular fa-circle-dollar text-dark"></i> 
+            <h4 class=" great">Great Value</h4>
+            <p class="text-dark parad">We offer competitive prices on over 100 million items.The best value</p>
+            </div>
+            <div class="col-lg-2"> 
+              <div
+              class="vr mt-2"
+              style="border-left:1px solid rgba(177, 175, 175, 0.521); height: 15vh"
+            ></div></div>
+          </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-10">
+          
+            <i class="fa-regular fa-circle-dollar text-dark"></i> 
+            <h4 class=" great">Shipping</h4>
+            <p class="text-dark parad">We ship to over 200 countries and regions, and our site comes in 12 languages.</p>
+            </div>
+            <div class="col-lg-2"> 
+              <div
+              class="vr mt-2"
+              style="border-left:1px solid rgba(177, 175, 175, 0.521); height: 15vh"
+            ></div></div>
+          </div>
+          </div>
+          <div class="col-lg-3">
+         
+            <div class="row">
+              <div class="col-lg-10">
+          
+             <!--    <i class="fa fa-user great" style="font-size:50px;"></i> -->
+            <h4 class=" great">Safe Payment</h4>
+            <p class="text-dark parad">Pay with the world's most popular and secure payment methods.</p>
+            </div>
+            <div class="col-lg-2"> 
+              <div
+              class="vr mt-2"
+              style="border-left:1px solid rgba(177, 175, 175, 0.521); height: 15vh"
+            ></div></div>
+          </div>
+          </div>
+          <div class="col-lg-3">
+            <!-- <i class="fa-regular fa-circle-dollar text-dark"></i> 
+            <h4 class=" great"></h4>
+            <p class="text-dark parad"></p> -->
+            <div class="row">
+              <div class="col-lg-10">
+          
+            <i class="fa-regular fa-circle-dollar text-dark"></i> 
+            <h4 class=" great">Help center</h4>
+            <p class="text-dark parad">Round-the-clock assistance for a smooth shopping experience.</p>
+            </div>
+            <div class="col-lg-2"> 
+              <div
+              class="vr mt-2"
+              style="border-left:1px solid rgba(177, 175, 175, 0.521); height: 15vh"
+            ></div></div>
+          </div>
+          </div>
+        </div>
       </div>
     </section>
     <section>
@@ -198,10 +250,9 @@
 <div class="bre">
   <img src="img/shirt4.jpg" alt="" class="img-fluid">
 </div>
-
-  <div class="des" id="#product.html">
+  <div class="des" >
     <span>khaki</span>
-    <h5>Holy Men</h5>
+    <a href="product.html" class="khaki text-dark"><h5>Holy Men</h5></a>
     <div class="star">
       <i class="fa fa-star"></i>
       <i class="fa fa-star"></i>
@@ -210,7 +261,7 @@
     </div>
     <h4>$71</h4>
   </div>
-  <a href="#"><i class="fa fa-shopping-cart cart addtocart"></i></a>
+  <a href="cart.html"><i class="fa fa-shopping-cart cart addtocart"></i></a>
     </div>
   </div>
   <div class="col-lg-3">
@@ -221,7 +272,7 @@
       
         <div class="des">
           <span>Maglietta</span>
-          <h5>Olive's Women's Dress</h5>
+          <a href="product.html" class="khaki text-dark"><h5>Olive's Women's Dress</h5></a>
           <div class="star">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -232,7 +283,7 @@
           </div>
           <h4>$28</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart "></i></a>
+        <a href="cart.html"><i class="fa fa-shopping-cart cart "></i></a>
           </div>
   </div>
   <div class="col-lg-3">
@@ -243,7 +294,7 @@
       
         <div class="des">
           <span>admire</span>
-          <h5>Slinky CutOut Dress</h5>
+          <a href="product.html" class="khaki text-dark"><h5>Slinky CutOut Dress</h5></a>
           <div class="star">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -264,7 +315,7 @@
       
         <div class="des">
           <span>sanguine</span>
-          <h5>George Flannel Hoodie</h5>
+          <a href="product.html" class="khaki text-dark"><h5>George Flannel Hoodie</h5></a>
           <div class="star">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -277,6 +328,14 @@
         <a href="#"><i class="fa fa-shopping-cart cart "></i></a>
           </div>
   </div>
+
+</div>
+<div class="row">
+<div class="col-lg-10">
+  <div class="view mt-3">
+    <a href="shop.html"><button class="btn btn-danger">View More</button></a>
+  </div>
+</div>
 </div>
 </div>
 </section>
