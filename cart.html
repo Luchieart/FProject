@@ -128,24 +128,36 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-text1">Product</div>
-                    <div class="col-lg-1 col-text1">Price</div>
+                    <div class="col-lg-2 col-text1">Price</div>
                     <div class="col-lg-2 col-text1">Quantity</div>
-                    <div class="col-lg-3 col-text1 px-5">Total</div>
+                    <div class="col-lg-2 col-text1 px-5">Total</div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-lg-6 ">Holy men</div>
-                    <div class="col-lg-1 "><span class="" style="font-size:15px;">N</span>3,239<span style="font-size:15px;">.45</span></div>
-                    <div class="col-lg-2 col-text1">Quantity</div>
-                    <div class="col-lg-3 col-text1 px-5">Total</div>
+                    <div class="col-lg-6">Holy men</div>
+                    <div class="col-lg-2">N<span id="price">3239</span></div>
+                    <!-- <div class="col-lg-2 col-text1">Quantity</div> -->
+                    <div class="col-lg-2">
+                      <input type="button" onclick="decreaseValue()" value="-" />
+                      <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+                      <input type="button" onclick="increaseValue()" value="+" />
+                    </div>
+                    <div class="col-lg-2 col-text1 px-5" id="total">Total</div>
                     <hr style="color:rgba(29, 26, 26, 0.349)" class="mt-4">
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-6 ">George Flannel Hoodie</div>
-                    <div class="col-lg-1"> <span class="" style="font-size:15px;">N</span>12,745<span style="font-size:15px;">.46</span></div>
+              
+                
+                <!-- <div class="row mt-5">
+                    <div class="col-lg-4 ">Holy men</div>
+                    <div class="col-lg-1">$71.00</div>
                     <div class="col-lg-2 col-text1">Quantity</div>
+                    <div class="col-lg-2">
+                      <input type="button" onclick="decreaseValue()" value="-" />
+                      <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+                      <input type="button" onclick="increaseValue()" value="+" />
+                    </div>
                     <div class="col-lg-3 col-text1 px-5">Total</div>
                     <hr style="color:rgba(29, 26, 26, 0.349)" class="mt-4">
-                </div>
+                </div> -->
                 <div class="row mt-3">
 <div class="col-lg-7">
     <div class="row">
@@ -166,7 +178,7 @@
                 <div class="row mt-2">
 <div class="alileft">
    <p class="mx-5">Subtotal</p>
-   <p class="mx-5" style="font-size:23px;"> <span class="" style="font-size:15px;">NGN</span>16,984<span style="font-size:13px;">.91</span></p>
+   <p class="mx-5" style="font-size:23px;"> <span style="font-size: 13px;"> NGN</span><span class=""  id="total">6,478</span></p>
     <hr style="color:rgba(29, 26, 26, 0.349)" class="mt-4">
 </div>
                 </div>
@@ -275,10 +287,10 @@
             <div class="col-lg-2">
               <ul>
                 <li class="fw-bold text-light py-3"><h4>About</h4></li>
-                <li class="text-light">Abouyt Us</li>
+                <li class="text-light">About Us</li>
                 <li class="text-light">Delivery Information</li>
                 <li class="text-light">Privacy Policy</li>
-                <li class="text-light">Terms and Conditions</li>
+                <li class="text-light">Terms & Conditions</li>
                 <li class="text-light">Contact Us</li>
               </ul>
             </div>
@@ -303,7 +315,7 @@
           
           
           
-          
+              <script src="main.js"></script>
               <script src="js/bootstrap.bundle.min.js"></script>
               <script
                 src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

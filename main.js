@@ -13,3 +13,66 @@ $(document).ready(function(){
              });
          }); 
  });
+
+//cart increase and decrease value
+ function increaseValue()
+    {   
+        var a = document.getElementById("price").innerHTML;
+        var b = document.getElementById("number").value;
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        if(value<10){
+            value++;
+                document.getElementById('number').value = value;
+                var result = parseInt(a) * parseInt(b);
+                return document.getElementById('total').innerHTML = result;
+        }
+
+    }
+    function decreaseValue()
+    {
+        var a = document.getElementById("price").innerHTML;
+        var b = document.getElementById("number").value;
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        if(value>1){
+            value--;
+                document.getElementById('number').value = value;
+                var result = parseInt(a) * parseInt(b);
+                return document.getElementById('total').innerHTML = result;
+        }
+    
+    }
+
+
+
+
+ /* function increaseValue()
+    {   
+        var ar = document.getElementById("amount").innerHTML;
+        var br = document.getElementById("num").value;
+        var value = parseInt(document.getElementById('num').value, 10);
+        value = isNaN(value) ? 0 : value;
+        if(value<10){
+            value++;
+                document.getElementById('num').value = value;
+                var result = parseInt(ar) * parseInt(br);
+                return document.getElementById('tot').innerHTML = result;
+        }
+
+    }
+    function decreaseValue()
+    {
+        var ar = document.getElementById("amount").innerHTML;
+        var br = document.getElementById("num").value;
+        var value = parseInt(document.getElementById('num').value, 10);
+        value = isNaN(value) ? 0 : value;
+        if(value>1){
+            value--;
+                document.getElementById('num').value = value;
+                var result = parseInt(ar) * parseInt(br);
+                return document.getElementById('tot').innerHTML = result;
+        }
+    
+    }
+ */
